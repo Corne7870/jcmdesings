@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JCM Desings | Premium Website Development South Africa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f14;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(15,15,20,0.85);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    background:linear-gradient(90deg,#00f2ff,#6a00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav a{
+    margin-left:30px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f2ff;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 10%;
+    background:linear-gradient(135deg,#0f0f14,#1a0033);
+}
+
+.hero h1{
+    font-size:55px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    opacity:0.8;
+    margin-bottom:20px;
+}
+
+.sa-badge{
+    margin-bottom:40px;
+    font-weight:600;
+    color:#00f2ff;
+}
+
+.btn{
+    padding:15px 40px;
+    background:linear-gradient(90deg,#00f2ff,#6a00ff);
+    border:none;
+    border-radius:50px;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00f2ff;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1a1a22;
+    padding:40px;
+    border-radius:20px;
+    transition:0.4s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:linear-gradient(135deg,#1a1a22,#240046);
+}
+
+.card h3{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.card p{
+    opacity:0.7;
+}
+
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.portfolio div{
+    height:200px;
+    border-radius:15px;
+    background:linear-gradient(135deg,#00f2ff,#6a00ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:600;
+    font-size:20px;
+    transition:0.4s;
+}
+
+.portfolio div:hover{
+    transform:scale(1.05);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-info{
+    margin-bottom:40px;
+    font-size:18px;
+    line-height:1.8;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    background:#1a1a22;
+    color:white;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0a0a0f;
+    opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">JCM Desings</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>We Build Powerful Websites That Grow Businesses</h1>
+        <p>Modern. Fast. Conversion-Driven. Designed to help South African businesses dominate online.</p>
+        <div class="sa-badge">🇿🇦 Proudly Based in South Africa</div>
+        <a href="#contact" class="btn">Start Your Project</a>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Custom Website Design</h3>
+            <p>Unique, modern, and fully responsive websites tailored to your brand.</p>
+        </div>
+        <div class="card">
+            <h3>E-Commerce Development</h3>
+            <p>Online stores built to convert visitors into loyal customers.</p>
+        </div>
+        <div class="card">
+            <h3>Business Websites</h3>
+            <p>Professional websites that build trust and generate consistent leads.</p>
+        </div>
+        <div class="card">
+            <h3>Website Optimization</h3>
+            <p>Speed, SEO, and performance improvements for maximum growth.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="section-title">Our Work</h2>
+    <div class="portfolio">
+        <div>Corporate Website</div>
+        <div>Online Store</div>
+        <div>Startup Landing Page</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Let’s Work Together</h2>
+
+    <div class="contact-info">
+        <strong>Contact Person:</strong> Jg Coomans<br>
+        <strong>Phone:</strong> 082 772 9421<br>
+        <strong>Location:</strong> South Africa
+    </div>
+
+    <div class="contact">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Tell us about your project"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 JCM Desings | Proudly Serving Businesses Across South Africa 🇿🇦
+</footer>
+
+</body>
+</html>
